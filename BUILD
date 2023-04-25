@@ -15,6 +15,9 @@ STATIC_VARIANTS = [
 STATIC = {
     "{REGISTRY}/{PROJECT_ID}/static:{COMMIT_SHA}": "//base:static_root_amd64_debian11",
     "{REGISTRY}/{PROJECT_ID}/static-debian11:{COMMIT_SHA}": "//base:static_root_amd64_debian11",
+
+    "{REGISTRY}/{PROJECT_ID}/static:{COMMIT_SHA}": "//base:static_root_amd64_debian12",
+    "{REGISTRY}/{PROJECT_ID}/static-debian11:{COMMIT_SHA}": "//base:static_root_amd64_debian12",
 }
 
 STATIC |= {
@@ -23,9 +26,20 @@ STATIC |= {
     for (tag_base, label, user) in STATIC_VARIANTS
 }
 
+STATIC |= {
+    "{REGISTRY}/{PROJECT_ID}/static:" + tag_base + "-" + arch: "//base:" + label + "_" + user + "_" + arch + "_debian12"
+    for arch in ARCHITECTURES
+    for (tag_base, label, user) in STATIC_VARIANTS
+}
+
 # oci_image_index
 STATIC |= {
     "{REGISTRY}/{PROJECT_ID}/static:" + tag_base: "//base:" + label + "_" + user + "_debian11"
+    for (tag_base, label, user) in STATIC_VARIANTS
+}
+
+STATIC |= {
+    "{REGISTRY}/{PROJECT_ID}/static:" + tag_base: "//base:" + label + "_" + user + "_debian12"
     for (tag_base, label, user) in STATIC_VARIANTS
 }
 
