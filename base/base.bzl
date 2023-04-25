@@ -114,15 +114,26 @@ def distro_components(distro):
                 ],
             )
 
-            oci_image(
-                name = "base_" + user + "_" + arch + "_" + distro,
-                base = ":static_" + user + "_" + arch + "_" + distro,
-                tars = [
-                    deb_pkg(arch, distro, "libc6"),
-                    deb_pkg(arch, distro, "libssl1.1"),
-                    deb_pkg(arch, distro, "openssl"),
-                ],
-            )
+            if distro == "debian11":
+                oci_image(
+                    name = "base_" + user + "_" + arch + "_" + distro,
+                    base = ":static_" + user + "_" + arch + "_" + distro,
+                    tars = [
+                        deb_pkg(arch, distro, "libc6"),
+                        deb_pkg(arch, distro, "libssl1.1"),
+                        deb_pkg(arch, distro, "openssl"),
+                    ],
+                )
+            elif distro == "debian12":
+                oci_image(
+                    name = "base_" + user + "_" + arch + "_" + distro,
+                    base = ":static_" + user + "_" + arch + "_" + distro,
+                    tars = [
+                        deb_pkg(arch, distro, "libc6"),
+                        deb_pkg(arch, distro, "libssl3"),
+                        deb_pkg(arch, distro, "openssl"),
+                    ],
+                )
 
             # A debug image with busybox available.
             oci_image(
