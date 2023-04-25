@@ -1901,7 +1901,7 @@ def repositories():
     debian_archive(
         name = "ppc64le_debian12_libssl3",
         package_name = "libssl3",
-        sha256 = "81ae8d4bd412f9885061769a11124bd5fcca1224c93b58c01267b6f8b14dc0b0",
+        sha256 = "43d6e21dac195834137d4c599f6f12474d5598a48210a841bb0cf4974e74ab24",
         urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/libssl3_3.0.8-1_ppc64el.deb"],
     )
     debian_archive(
