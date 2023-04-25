@@ -1433,7 +1433,7 @@ def repositories():
     debian_archive(
         name = "arm_debian12_libssl3",
         package_name = "libssl3",
-        sha256 = "88cb56e8b0355a676a7d0510c26c1d04e06d2b0ffc04ba317dac093f3ad57229",
+        sha256 = "2d6917d57c06244f3378a1dcc1be6b9cadae41fce3592614bea4a853a45d24d9",
         urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/libssl3_3.0.8-1_armhf.deb"],
     )
     debian_archive(
