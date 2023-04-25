@@ -1949,7 +1949,7 @@ def repositories():
     debian_archive(
         name = "ppc64le_debian12_openssl",
         package_name = "openssl",
-        sha256 = "7e1b95aba7088a15fb19e3ccb324b8fa99d8acf234bcc921c6bd9a2aa469a98f",
+        sha256 = "74dc9c45521c9e4fb51fb21d14d2b86afc7d495df0f981addf172e618b4540b3",
         urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/openssl_3.0.8-1_ppc64el.deb"],
     )
     debian_archive(
@@ -2087,7 +2087,7 @@ def repositories():
     debian_archive(
         name = "s390x_debian12_libssl3",
         package_name = "libssl3",
-        sha256 = "c9a47911122854a732e73cca8d19b30f054321c41d6f9d41788af32e525a513d",
+        sha256 = "d90a1ffa4fe3f540319dcf6548cf88a820f7d7cf70d4b843f6ee6b64cb2fb833",
         urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/libssl3_3.0.8-1_s390x.deb"],
     )
     debian_archive(
