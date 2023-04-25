@@ -1751,7 +1751,7 @@ def repositories():
     debian_archive(
         name = "arm64_debian12_openssl",
         package_name = "openssl",
-        sha256 = "fcb50f2a9cdd98ff4684b5b797e3c8b9642b8bfe906a4d8d67629d2b0ea19fce",
+        sha256 = "9fa3ae14420e8a214eb5916648529de9abecd6f172925f9c9fa0b0cece8f95ce",
         urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/openssl_3.0.8-1_arm64.deb"],
     )
     debian_archive(
