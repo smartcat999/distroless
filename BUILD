@@ -68,6 +68,9 @@ BASE_VARIANTS = [
 BASE = {
     "{REGISTRY}/{PROJECT_ID}/base:{COMMIT_SHA}": "//base:base_root_amd64_debian11",
     "{REGISTRY}/{PROJECT_ID}/base-debian11:{COMMIT_SHA}": "//base:base_root_amd64_debian11",
+
+    "{REGISTRY}/{PROJECT_ID}/base:{COMMIT_SHA}": "//base:base_root_amd64_debian12",
+    "{REGISTRY}/{PROJECT_ID}/base-debian11:{COMMIT_SHA}": "//base:base_root_amd64_debian12",
 }
 
 BASE |= {
@@ -76,9 +79,20 @@ BASE |= {
     for (tag_base, label, user) in BASE_VARIANTS
 }
 
+BASE |= {
+    "{REGISTRY}/{PROJECT_ID}/base:" + tag_base + "-" + arch: "//base:" + label + "_" + user + "_" + arch + "_debian12"
+    for arch in ARCHITECTURES
+    for (tag_base, label, user) in BASE_VARIANTS
+}
+
 # oci_image_index
 BASE |= {
     "{REGISTRY}/{PROJECT_ID}/base:" + tag_base: "//base:" + label + "_" + user + "_debian11"
+    for (tag_base, label, user) in BASE_VARIANTS
+}
+
+BASE |= {
+    "{REGISTRY}/{PROJECT_ID}/base:" + tag_base: "//base:" + label + "_" + user + "_debian12"
     for (tag_base, label, user) in BASE_VARIANTS
 }
 
