@@ -2135,7 +2135,7 @@ def repositories():
     debian_archive(
         name = "s390x_debian12_openssl",
         package_name = "openssl",
-        sha256 = "911eba5df5d2a02591d4edce31726f9c28f12ed26bb2ecfc1659c52d623e80d9",
+        sha256 = "6824c3f59c1c3509e09b400f8906404ee63c1eda5f80f59bf7533297849f071e",
         urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/openssl_3.0.8-1_s390x.deb"],
     )
     debian_archive(
