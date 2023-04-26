@@ -274,9 +274,22 @@ NODEJS |= {
     for (tag_base, label, user) in NODEJS_VARIATIONS
 }
 
+NODEJS |= {
+    "{REGISTRY}/{PROJECT_ID}/nodejs" + version + ":" + tag_base + "-" + arch: "//nodejs:nodejs" + version + label + "_" + user + "_" + arch + "_debian12"
+    for arch in BASE_ARCHITECTURES
+    for version in NODEJS_VERSIONS
+    for (tag_base, label, user) in NODEJS_VARIATIONS
+}
+
 # oci_image_index
 NODEJS |= {
     "{REGISTRY}/{PROJECT_ID}/nodejs" + version + ":" + tag_base: "//nodejs:nodejs" + version + label + "_" + user + "_debian11"
+    for version in NODEJS_VERSIONS
+    for (tag_base, label, user) in NODEJS_VARIATIONS
+}
+
+NODEJS |= {
+    "{REGISTRY}/{PROJECT_ID}/nodejs" + version + ":" + tag_base: "//nodejs:nodejs" + version + label + "_" + user + "_debian12"
     for version in NODEJS_VERSIONS
     for (tag_base, label, user) in NODEJS_VARIATIONS
 }
