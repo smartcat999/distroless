@@ -1308,7 +1308,7 @@ def repositories():
         name = "amd64_debian12_libssl3",
         package_name = "libssl3",
         sha256 = "62faed6afef01c09524a5f082bd63f1732c5f986856be11a3e7401128c5c01c9",
-        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/libssl3_3.0.8-1_amd64.deb"],
+        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/libssl3_3.1.0-1_amd64.deb"],
     )
     debian_archive(
         name = "amd64_debian12_libstdcpp6",
@@ -1368,7 +1368,7 @@ def repositories():
         name = "amd64_debian12_openssl",
         package_name = "openssl",
         sha256 = "0354f1f234a2528885bb3fff9785050d9b01d4c41445afc101790162ae043ef2",
-        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/openssl_3.0.8-1_amd64.deb"],
+        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/openssl_3.1.0-1_amd64.deb"],
     )
     debian_archive(
         name = "amd64_debian12_python3-distutils",
@@ -1434,7 +1434,7 @@ def repositories():
         name = "arm_debian12_libssl3",
         package_name = "libssl3",
         sha256 = "2d6917d57c06244f3378a1dcc1be6b9cadae41fce3592614bea4a853a45d24d9",
-        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/libssl3_3.0.8-1_armhf.deb"],
+        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/libssl3_3.1.0-1_armhf.deb"],
     )
     debian_archive(
         name = "arm_debian12_libstdcpp6",
@@ -1452,7 +1452,7 @@ def repositories():
         name = "arm_debian12_openssl",
         package_name = "openssl",
         sha256 = "077716cb690665d7ef356b92c598197986495dc90c8d6753b1929d265de22fbd",
-        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/openssl_3.0.8-1_armhf.deb"],
+        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/openssl_3.1.0-1_armhf.deb"],
     )
     debian_archive(
         name = "arm_debian12_tzdata",
@@ -1692,7 +1692,7 @@ def repositories():
         name = "arm64_debian12_libssl3",
         package_name = "libssl3",
         sha256 = "e488773b4434bfcd6807370abcae9d7280b981bec4c9f02c5c23ad16c13322dd",
-        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/libssl3_3.0.8-1_arm64.deb"],
+        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/libssl3_3.1.0-1_arm64.deb"],
     )
     debian_archive(
         name = "arm64_debian12_libstdcpp6",
@@ -1752,7 +1752,7 @@ def repositories():
         name = "arm64_debian12_openssl",
         package_name = "openssl",
         sha256 = "9fa3ae14420e8a214eb5916648529de9abecd6f172925f9c9fa0b0cece8f95ce",
-        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/openssl_3.0.8-1_arm64.deb"],
+        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/openssl_3.1.0-1_arm64.deb"],
     )
     debian_archive(
         name = "arm64_debian12_python3-distutils",
@@ -1902,7 +1902,7 @@ def repositories():
         name = "ppc64le_debian12_libssl3",
         package_name = "libssl3",
         sha256 = "43d6e21dac195834137d4c599f6f12474d5598a48210a841bb0cf4974e74ab24",
-        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/libssl3_3.0.8-1_ppc64el.deb"],
+        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/libssl3_3.1.0-1_ppc64el.deb"],
     )
     debian_archive(
         name = "ppc64le_debian12_libstdcpp6",
@@ -1950,7 +1950,7 @@ def repositories():
         name = "ppc64le_debian12_openssl",
         package_name = "openssl",
         sha256 = "74dc9c45521c9e4fb51fb21d14d2b86afc7d495df0f981addf172e618b4540b3",
-        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/openssl_3.0.8-1_ppc64el.deb"],
+        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/openssl_3.1.0-1_ppc64el.deb"],
     )
     debian_archive(
         name = "ppc64le_debian12_tzdata",
@@ -2088,7 +2088,7 @@ def repositories():
         name = "s390x_debian12_libssl3",
         package_name = "libssl3",
         sha256 = "d90a1ffa4fe3f540319dcf6548cf88a820f7d7cf70d4b843f6ee6b64cb2fb833",
-        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/libssl3_3.0.8-1_s390x.deb"],
+        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/libssl3_3.1.0-1_s390x.deb"],
     )
     debian_archive(
         name = "s390x_debian12_libstdcpp6",
@@ -2136,7 +2136,7 @@ def repositories():
         name = "s390x_debian12_openssl",
         package_name = "openssl",
         sha256 = "6824c3f59c1c3509e09b400f8906404ee63c1eda5f80f59bf7533297849f071e",
-        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/openssl_3.0.8-1_s390x.deb"],
+        urls = ["https://snapshot.debian.org/archive/debian/20230327T222347Z/pool/main/o/openssl/openssl_3.1.0-1_s390x.deb"],
     )
     debian_archive(
         name = "s390x_debian12_tzdata",
