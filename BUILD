@@ -238,7 +238,6 @@ PYTHON3 |= {
 
 ## NODEJS
 NODEJS_VERSIONS = [
-    "14",
     "16",
     "18",
     "20",
@@ -260,7 +259,7 @@ NODEJS = {
 }
 
 # oci_image_index
-NODEJS = {
+NODEJS |= {
     "{REGISTRY}/{PROJECT_ID}/nodejs" + version + "-" + distro + ":" + tag_base: "//nodejs:nodejs" + version + label + "_" + user + "_" + distro
     for distro in LANGUAGE_DISTROS
     for version in NODEJS_VERSIONS
